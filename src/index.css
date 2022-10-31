@@ -1,0 +1,35 @@
+body {
+  background-color: gainsboro;
+  margin: 0;
+}
+#parentRoot {
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#root {
+  position: relative;
+  background-color: gainsboro;
+}
+@media screen and (min-width: 480px) {
+  .parentItem {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .parentItem {
+    color: red;
+  }
+}
+
+
+.image {
+  height: 400px;
+  width: 200px;
+}
+.added {
+  background-color: purple;
+}
+
+
