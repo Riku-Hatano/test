@@ -7,12 +7,11 @@ const SearchCard = (i: number, id: number, setValues: react.Dispatch<react.SetSt
     let parent = document.getElementById(`individualCard${i}`) as HTMLDivElement
     parent.classList.add("added")
     console.log(id)
-    // console.log(parent.id)
-    // console.log(parent.className)
-    // console.log(parent.classList[0])
 
     // モーダルウインドウの画像のsrcを変更する処理
     const imgsrc = `https://storage.googleapis.com/ygoprodeck.com/pics/${id}.jpg`
+    const imageModalWindow = document.getElementById("imageModalWindow") as HTMLImageElement;
+    imageModalWindow.src = imgsrc
     // setValues ({
     //     modalImage: imgsrc
     // })

@@ -5,7 +5,8 @@ const ModalWindow = (props: any) => {
         "img",
         {
             src: props.src,
-            className: "image-modal-window"
+            className: "image-modal-window",
+            id: "imageModalWindow"
         },
         null
     )
