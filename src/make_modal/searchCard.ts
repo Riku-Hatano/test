@@ -12,9 +12,6 @@ const SearchCard = (i: number, id: number, setValues: react.Dispatch<react.SetSt
     const imgsrc = `https://storage.googleapis.com/ygoprodeck.com/pics/${id}.jpg`
     const imageModalWindow = document.getElementById("imageModalWindow") as HTMLImageElement;
     imageModalWindow.src = imgsrc
-    // setValues ({
-    //     modalImage: imgsrc
-    // })
 
     // モーダルウインドウの表示/非表示を切り替える処理
     const parentModalWindow = document.getElementById("parentModalWindow") as HTMLDivElement

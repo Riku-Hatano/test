@@ -2,9 +2,6 @@ import React from "react"
 import SearchCard from "./searchCard"
 
 const Card = (props: any) => {
-    // console.log(props.characters)
-    // console.log(props.loading)
-    // console.log(props.setValues)
     console.log(props.characters)
     const cardBox: any = []
 

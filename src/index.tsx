@@ -8,9 +8,10 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
+  //because of React.StrictMode, useEffect will render component two times, if you dont like this, delete strictmode.
 );
 
 // If you want to start measuring performance in your app, pass a function
