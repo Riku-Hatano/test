@@ -4,6 +4,7 @@ import "../page_css/Home.css"
 const Home = () => {
     return (
         <div>
+            <p>done</p>
             <head>
                 <meta charSet="utf-8"></meta>
                 <title>fetch data from Yu-Gi-Oh Api</title>
