@@ -3,8 +3,6 @@ import axios from "axios"
 
 import Card from "../make_modal/card"
 import ModalWindow from "../make_modal/modal"
-// import Card from "../make_modal_card/card"
-// import ModalWindow from "../make_modal_card/modal"
 import { useParams } from "react-router-dom"
 
 

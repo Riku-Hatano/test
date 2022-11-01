@@ -17,7 +17,6 @@ const ModalWindow = (props: any) => {
             className: "parent-modal-window",
             id: "parentModalWindow",
             onClick: () => EraseModalWindow()
-            //後でerasemodalwindowを実装する。
         },
         imageModalWindow
     )

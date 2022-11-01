@@ -18,6 +18,8 @@ const Home = () => {
             <div>
                 <a href="/archetypes/Blue-Eyes">Blue-Eyes</a>
                 <a href="/archetypes/Albaz Dragon">Albaz Dragon</a>
+                <a href="/archetypes/Despia">Despia</a>
+                <a href="/archetypes/Zoodiac">Zoodiac</a>
             </div>
         </div>
     )

@@ -1,7 +1,5 @@
-import React from "react"
 import react from "react"
 import "../index.css"
-import ModalWindow from "./modal"
 
 const SearchCard = (i: number, id: number, setValues: react.Dispatch<react.SetStateAction<any>>) => {
     let parent = document.getElementById(`individualCard${i}`) as HTMLDivElement
@@ -18,8 +16,4 @@ const SearchCard = (i: number, id: number, setValues: react.Dispatch<react.SetSt
     parentModalWindow.style.display = "inline"
 }
 
-const eraseModalWindow = () => {
-    const parentModalWindow = document.getElementById("parentModalWindow") as HTMLDivElement
-    parentModalWindow.style.display = "none"
-}
 export default SearchCard
