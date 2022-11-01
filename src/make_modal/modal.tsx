@@ -1,4 +1,5 @@
 import React from "react"
+import EraseModalWindow from "./eraseModal"
 
 const ModalWindow = (props: any) => {
     const imageModalWindow = React.createElement(
@@ -15,11 +16,11 @@ const ModalWindow = (props: any) => {
         {
             className: "parent-modal-window",
             id: "parentModalWindow",
-            onClick: () => props.this.eraseModalWindow()
+            onClick: () => EraseModalWindow()
+            //後でerasemodalwindowを実装する。
         },
         imageModalWindow
     )
-
     return (
         <>
         {parentModalWindow}
