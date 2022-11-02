@@ -1,7 +1,7 @@
 import react from "react"
 import "../index.css"
 
-const SearchCard = (i: number, id: number, setValues: react.Dispatch<react.SetStateAction<any>>) => {
+const SearchCard = (i: number, id: number) => {
     let parent = document.getElementById(`individualCard${i}`) as HTMLDivElement
     parent.classList.add("added")
     console.log(id)

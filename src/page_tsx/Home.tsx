@@ -1,4 +1,3 @@
-import Monster from "./Monster"
 import "../page_css/Home.css"
 
 const Home = () => {
@@ -17,10 +16,11 @@ const Home = () => {
             <a href="/spell">spell</a>
             <br></br>
             <div>
-                <a href="/archetypes/Blue-Eyes">Blue-Eyes</a>
-                <a href="/archetypes/Albaz Dragon">Albaz Dragon</a>
-                <a href="/archetypes/Despia">Despia</a>
-                <a href="/archetypes/Zoodiac">Zoodiac</a>
+                <a href="/archetypes/Blue-Eyes">Blue-Eyes</a> |
+                <a href="/archetypes/Albaz Dragon">Albaz Dragon</a> |
+                <a href="/archetypes/Despia">Despia</a> |
+                <a href="/archetypes/Zoodiac">Zoodiac</a> |
+                <a href="/archetypes/Keldo">Keldo</a>
             </div>
         </div>
     )
