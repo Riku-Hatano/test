@@ -27,7 +27,7 @@ const Card = (props: any) => {
                 key: i,
                 id: `individualCard${i}`,
                 className: "parentItem",
-                onClick: () => SearchCard(i, props.characters[i].id, props.setValues)
+                onClick: () => SearchCard(i, props.characters[i].id)
             }, 
             monsterItem, flavorItem
         )

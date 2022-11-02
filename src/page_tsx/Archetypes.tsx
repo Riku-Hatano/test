@@ -6,80 +6,13 @@ import ModalWindow from "../make_modal/modal"
 import { useParams } from "react-router-dom"
 
 
-
-// const ComponentDidMount = (values: any, valuesLoading: boolean, valuesCharacters: any, valuesModalImage: string, props: react.Dispatch<react.SetStateAction<any>>) => {
-//     const { archetype } = useParams<{archetype: string}>() 
-//     console.log(values)
-//     console.log(valuesLoading)
-//     console.log(valuesModalImage)
-//     console.log(valuesCharacters)
-//     console.log(props)
-//     props ({
-//         ...values,
-//         valuesLoading: true
-//     })
-    
-//     const characters: Array<any> = []
-//     let box: any = []
-    
-//     axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=" + archetype)
-//     .then((results) => {
-//         const d = results.data["data"] as Array<any>
-//         characters.push(d);       
-//         for (let i = 0 ; i < characters.length ; i++) {
-//             for (let j = 0 ; j < characters[i].length ; j++) {
-//                 box.push(characters[i][j])
-//                 console.log(characters[i][j])
-//             }
-//         }        
-//     })
-
-//     .then(() => {
-//         props({
-//             ...values,
-//             valuesCharacters: box
-//         })
-//     })
-//     .catch(err => {
-//         console.log("err:", err);
-//     })
-
-//     return (
-//         <div id="parentroot">
-//             <meta name="viewport" content="width=divice-width, initial-scale=1.0"></meta>
-//             <div>done</div>
-//             <div>
-//                 <Card 
-//                 characters={valuesCharacters}
-//                 loading={valuesLoading}
-//                 // this={this}
-//                 />
-//             </div>    
-//             <div>
-//                 <ModalWindow
-//                 src={valuesModalImage}
-//                 // this={this}
-//                 />
-//             </div>
-//         </div>
-//     )
-// }
-
-
 const Archetypes = () => {
     const [values, setValues] = useState({
         loading: true,
         characters: {},
-    })
-    let modalImage = "https://storage.googleapis.com/ygoprodeck.com/pics/38955728.jpg"
-    
+    })    
     const { archetype } = useParams<{archetype: string}>() 
 
-    // setValues ({
-    //     ...values,
-    //     loading: true
-    // })
-    
     const characters: Array<any> = []
     let box: any = []
     
@@ -99,8 +32,6 @@ const Archetypes = () => {
                 ...values,
                 characters: box
             })
-            console.log(values.characters)
-            console.log(values.loading)
         })
         .catch(err => {
             console.log("err:", err);
